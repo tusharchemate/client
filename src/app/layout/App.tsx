@@ -34,10 +34,8 @@ function App() {
 
   return (
     <>
-      <div>
-        <Header />
-        <Catalog addProduct={addProducts} products={products} />
-      </div>
+      <Header />
+      <Catalog addProduct={addProducts} products={products} />
 
     </>
   )

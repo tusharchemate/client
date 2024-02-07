@@ -1,9 +1,10 @@
+import './styles.css';
 
 const Header = () => {
     return (
-        <div style={{ width: "100%", height: '40px' }}>
+        <div className="header">
             Restore
-        </div>
+        </div >
     )
 }
 
