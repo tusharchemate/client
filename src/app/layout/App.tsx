@@ -18,6 +18,17 @@ function App() {
 
   const addProducts = () => {
 
+    setProducts((prevState) => [...prevState, {
+      name: 'Tushar',
+      id: new Date().getTime(),
+      discription: 'Test',
+      price: 10,
+      type: 'Demo',
+      brand: 'Apple',
+      pictureURL: 'Tes',
+      quantityInStock: 2
+    }]);
+
   }
 
   return (
