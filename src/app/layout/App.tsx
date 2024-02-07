@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './styles.css'
 import { Product } from '../models/products';
+import Catalog from '../../features/catalog/Catalog';
 
 
 function App() {
@@ -11,14 +12,19 @@ function App() {
     fetch('https://localhost:7157/api/Product')
       .then((res) => res.json())
       .then((res) =>
-        console.log('res', res)
+        setProducts(res)
       )
   }, []);
+
+  const addProducts = () => {
+
+  }
 
   return (
     <>
       <div>
         Restore
+        <Catalog addProduct={addProducts} products={products} />
       </div>
 
     </>
