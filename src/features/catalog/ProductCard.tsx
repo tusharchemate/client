@@ -1,5 +1,6 @@
 import { Avatar, List } from "antd";
 import { Product } from "../../app/models/products";
+import './ProductCard.css';
 
 interface ProductCardProps {
     product: Product;
@@ -8,7 +9,7 @@ interface ProductCardProps {
 const ProductCard = ({ product }: ProductCardProps) => {
     return (
         <List>
-            <div style={{ display: 'flex' }}>
+            <div className="productcardContainer">
                 <Avatar src={product.pictureURL}></Avatar>
                 <div>{product.name}</div>
             </div>
