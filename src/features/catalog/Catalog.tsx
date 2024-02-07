@@ -1,5 +1,5 @@
-import React from 'react'
 import { Product } from '../../app/models/products'
+import { Avatar, List } from 'antd';
 
 interface CatalogProps {
     products: Product[];
@@ -9,11 +9,14 @@ interface CatalogProps {
 const Catalog = (props: CatalogProps) => {
     return (
         <div>
-            <ul>
+            <List>
                 {props.products?.map((product) => (
-                    <li>{product.name}</li>
+                    <div style={{ display: 'flex' }}>
+                        <Avatar src={product.pictureURL}></Avatar>
+                        <div>{product.name}</div>
+                    </div>
                 ))}
-            </ul>
+            </List>
             <button onClick={props.addProduct}>Add Product</button>
 
         </div>
