@@ -1,12 +1,26 @@
 .productcardContainer {
   max-width: 350px;
-  height: 350px;
+  height: 400px;
   padding: 10px;
   margin: 10px;
   border-radius: 7px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.productcardContainer .image {
+  height: 200px;
+  width: auto;
+  background-color: rgba(122, 119, 119, 0.25);
+}
 
+.productcardContainer .body {
+  padding: 5px;
+  height: 150px;
+  overflow: scroll;
+}
+.productcardContainer .actions {
+  display: flex;
+  justify-content: space-between;
+}
 .ProductListContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
