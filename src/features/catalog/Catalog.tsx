@@ -1,5 +1,5 @@
 import { Product } from '../../app/models/products'
-import { Avatar, List } from 'antd';
+import { Avatar, Button, List } from 'antd';
 
 interface CatalogProps {
     products: Product[];
@@ -17,7 +17,7 @@ const Catalog = (props: CatalogProps) => {
                     </div>
                 ))}
             </List>
-            <button onClick={props.addProduct}>Add Product</button>
+            <Button type='primary' onClick={props.addProduct}>Add Product</Button>
 
         </div>
     )
