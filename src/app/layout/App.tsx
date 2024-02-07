@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './styles.css'
 import { Product } from '../models/products';
 import Catalog from '../../features/catalog/Catalog';
+import Header from './Header';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
   return (
     <>
       <div>
-        Restore
+        <Header />
         <Catalog addProduct={addProducts} products={products} />
       </div>
 
