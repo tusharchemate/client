@@ -3,7 +3,11 @@ import './styles.css';
 const Header = () => {
     return (
         <div className="header">
-            Restore
+            <div className='headerContainer'>
+                Restore
+                <div></div>
+            </div>
+
         </div >
     )
 }

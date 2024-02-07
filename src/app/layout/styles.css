@@ -6,6 +6,15 @@
   box-shadow: rgba(115, 160, 204, 0.2) 0px 8px 24px;
   background-color: rgb(247, 255, 255);
 }
+.headerContainer {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  margin: 0 20px 0 20px;
+}
 
 .Catalog {
   position: absolute;
