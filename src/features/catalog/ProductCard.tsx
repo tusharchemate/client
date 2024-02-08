@@ -1,6 +1,7 @@
 import { Avatar, Button, List } from "antd";
 import { Product } from "../../app/models/products";
 import './ProductCard.css';
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
     product: Product;
@@ -19,8 +20,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 </div>
 
                 <div className="actions">
-                    <Button>Test</Button>
-                    <Button>Test2</Button>
+                    <Button type="primary">Add To Cart</Button>
+                    <Button type="link"><Link to={`/catalog/${product.id}`} >View</Link> </Button>
                 </div>
 
             </div>

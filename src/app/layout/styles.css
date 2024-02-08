@@ -25,3 +25,60 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.ProductDetails {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 50px 0 0 20px;
+}
+
+.ProductDetails > div {
+  background-color: #999191;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.ProductDetails .imageContainer {
+  width: 50%;
+  height: 350px;
+  box-shadow: rgba(115, 160, 204, 0.2) 0px 8px 24px;
+  background-color: rgba(122, 119, 119, 0.25);
+  border-radius: 10px;
+}
+
+.ProductDetails .infoContainer {
+  width: 50%;
+  height: 350px;
+  box-shadow: rgba(115, 160, 204, 0.2) 0px 8px 24px;
+  background-color: rgba(122, 119, 119, 0.25);
+  border-radius: 10px;
+  min-width: 550px;
+}
+
+.brand {
+  margin: 5px;
+  padding: 7px;
+  font-size: 50px;
+  border-bottom: 1px solid rgba(38, 47, 56, 0.2);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > div {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(140, 173, 205, 0.2);
+}
