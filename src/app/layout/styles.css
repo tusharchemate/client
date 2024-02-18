@@ -82,3 +82,7 @@ body {
   padding: 10px;
   border-bottom: 1px solid rgba(140, 173, 205, 0.2);
 }
+
+.header .shop {
+  cursor: pointer;
+}
